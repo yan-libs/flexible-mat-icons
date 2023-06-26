@@ -19,6 +19,10 @@ import { FlexMatIconModule } from "flex-mat-icon";
     //some imports
     FlexMatIconModule
   ],
+  providers: [
+    //some providers
+    {provide: FlexMatIconService, useClass: AppMatIconService}
+  ]
 })
 export class AppModule {
   constructor(
